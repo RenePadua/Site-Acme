@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="img/acme.ico">
+<head>
+    <title>Lojas Acme</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body, html {
+  height: 50%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: #FFF;
+}
+
+a{
+    color: #aaa;
+}
+
+ul{
+    list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url("img/capa-sapatos.jpg");
+  
+  filter: blur(8px);
+  -webkit-filter: blur(3px);
+  
+  height: 600px; 
+  
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  text-align: center;
+}    
+</style>
+
+</head>
+<body>
+
+    
+<section>
+  <div class="container-fluid">
+    <header data-dynamic-container-element="true">
+
+    <div class="containter-fluid">
+        <!-- -----    Logo + mini menu & Buscar    ------ -->
+        <div class="container-fluid row" style="padding-top: 10px;">
+            
+                <!-- -----    Logo   ------ -->
+                <div class="container-fluid col align-self-center">
+                     <img src="img/logo-acme.png" style="background-position: center" width="25%" height="25%" alt="logo das lojas Acme">
+                </div>
+                
+                <!-- -----    Mini menu & Buscar    ------ -->
+                <div class="container-fluid col justify-content-center">  
+                    
+                    <!-- -----    Mini menu   ------ -->
+                     <div class="container align-self-center col-8">
+                     <nav class="navbar navbar-expand-sm bg-white navbar-light justify-content-center">
+                         <ul class="navbar-nav">
+                             <li class="nav-item"><a class="nav-link" href="obra.html">Lojas</a></li>
+                             <li class="nav-item"><a class="nav-link" href="obra.html">Atendimento</a></li>
+                             <li class="nav-item"><a class="nav-link" href="obra.html">Favoritos</a></li>
+                         </ul>
+                     </nav>
+                    </div>
+                    
+                    <!-- -----    Buscar    ------ -->
+                    <div class="container-fluid align-self-center">
+                        <nav class="d-flex justify-content-center">
+                            <form class="d-flex my-2 my-lg-2" method="get">
+                              <input class="form-control mr-sm-2" id="busca" style="text-transform: lowercase" type="text" placeholder="O que você procura?">
+                              <button class="btn btn-success-p-3 bg-secundary" style="color: #000; background-color: #ccc" type="button" onclick="verifica()">Buscar</button>
+                            </form>
+                        </nav>
+
+                    </div>
+                </div>
+        </div>
+        
+        <!-- -----    MENU   ------ -->
+        <div class="container-fluid align-self-center" style="padding-top: 3%;">
+            <nav class="navbar navbar-expand-sm bg-white navbar-light justify-content-around">
+                <ul class="navbar-nav nav d-flex flex-wrap expand justify-content-around" style="font-size: 150%;">
+                    <li class="nav-item" style="border-right: solid #ddd; padding: 0 50px 0 50px;"><a class="nav-link" href="obra.html"> Feminino </a></li>
+                    <li class="nav-item"style="border-right: solid #ddd; padding: 0 50px 0 50px;"><a class="nav-link" href="obra.html"> Masculino </a></li>
+                    <li class="nav-item"style="border-right: solid #ddd; padding: 0 50px 0 50px;"><a class="nav-link" href="obra.html"> Infantil </a></li>
+                    <li class="nav-item" style="padding: 0 50px 0 50px;"><a class="nav-link" href="obra.html"> Lançamentos </a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <hr>    
+    
+    
+        </div>
+    </div>
+            
+        
+    </header>
+  </div>
+</section>
+
+
+<section>
+    <div class="container-fluid">
+        <div class="bg-image"></div>
+
+            <div class="bg-text">
+                <h2>Rede de Lojas</h2>
+                <h1 style="font-size:50px">Acme Calçados</h1>
+                <p>Venha nos conhecer!</p>
+            </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<div container style="padding: 50px 0 50px 0;">
+</div>
+
+
+<section>
+    <!-- -----    DIV Geral    ------ -->
+    <div class="container-fluid justify-content-center">
+        <!-- -----    DIV Título    ------ -->
+        <div class="container d-flex justify-content-center">
+            <h2 style="color: #990000; font-weight: bold;">Lançamentos</h2>
+        </div>
+
+        <!-- -----    DIV Galeria    ------ -->
+        <div class="container d-flex justify-content-center">
+
+            
+<div class="row col 12 landscape justify-content-around">
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato1.jpg" alt="Sapato 01" style="width:70%"></a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato2.jpg" alt="Sapato 02" style="width:70%"></a>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato3.jpg" alt="Sapato 03" style="width:70%"></a>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato4.jpg" alt="Sapato 04" style="width:70%"></a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato5.jpg" alt="Sapato 05" style="width:70%"></a>
+        </div>
+      </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<hr class="container" style="padding: 50px 0 50px 0;">
+  
+
+
+<section>
+    <!-- -----    DIV Geral    ------ -->
+    <div class="container-fluid justify-content-center">
+        <!-- -----    DIV Título    ------ -->
+        <div class="container d-flex justify-content-center">
+            <h2 style="color: #990000; font-weight: bold;">Os Queridinhos</h2>
+        </div>
+
+        <!-- -----    DIV Galeria    ------ -->
+        <div class="container d-flex justify-content-center">
+
+            
+<div class="row col 12 landscape justify-content-around">
+
+    <div class="col-md-4">
+      <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato6.png" alt="Sapato 06" style="width:90%"></a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato7.jpg" alt="Sapato 07" style="width:70%"></a>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="obra.html"><img src="img/sapato8.png" alt="Sapato 08" style="width:70%"></a>
+        </div>
+      </div>
+  
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<section>
+    <div class="container-fluid" style="background-color: #222; color: #aaa">
+      <footer data-dynamic-container-element="true">
+      <div class="containter-fluid row justify-content-around" style="padding-top: 60px">
+        <nav class="d-flex justify-content-around">
+        
+        <div class="container-fluid col">
+                <nav style="margin: 0 -40px 0 -40px;">
+                <img src="img/logo-acme-ico.png"  width="35%" height="35%">
+                </nav>
+        </div>
+
+        <div class="container-fluid col" style="padding: 0 50px 0 50px;">
+            <h4> Categorias </h4>
+            <nav style="margin: 0 -40px 0 -40px;">
+                <ul>
+                    <li> <a href="obra.html"> Feminino </a> </li>
+                    <li> <a href="obra.html"> Masculino </a> </li>
+                    <li> <a href="obra.html"> Infantil </a> </li>
+                    <li> <a href="obra.html"> Lançamentos </a> </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="container-fluid col" style="padding: 0 50px 0 50px;">
+            <h4> Institucional </h4>
+            <nav style="margin: 0 -40px 0 -40px;">
+                <ul>
+                    <li><a href="obra.html"> Quem somos </a> </li>
+                    <li><a href="obra.html"> Nossas lojas </a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid col" style="padding: 0 50px 0 50px;">
+            <h4> Ajuda </h4>
+            <nav style="margin: 0 -40px 0 -40px;">
+                <ul>
+                    <li><a href="obra.html"> Fale conosco </a> </li>
+                    <li><a href="obra.html"> Telefone </a> </li>
+                    <li><a href="obra.html"> Whatsapp </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container col" style="padding: 0 50px 0 50px;"> 
+            <h4>Redes Sociais
+            <span>
+            </span>
+            </h4>
+                <div>
+                    <div>
+                        <a href="obra.html">
+                            <img class="footer-box-icon" src="https://fatecrl.edu.br/public/images/icons/social-networks/facebook.svg" alt="Ícone Facebook">
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="obra.html"> 
+                            <img class="footer-box-icon" src="https://fatecrl.edu.br/public/images/icons/social-networks/instagram.svg" alt="Ícone Instagram">
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+      </div>
+      <div class="d-flex justify-content-around" style="padding-top: 30px;">
+        <p>
+            <span class="d-flex flex-wrap expand justify-content-around"> CNPJ 15.334.879/000107</span>
+        </p>
+        <p>
+        Desenvolvido por Equipe NRT - &copy copyright 2021
+        </p>
+      
+     
+    </nav>
+    </div>          
+          
+    </footer>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
